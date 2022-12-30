@@ -3,7 +3,10 @@ import React, { useRef } from 'react';
 import { BsWhatsapp } from 'react-icons/bs';
 import { MdOutlineEmail } from 'react-icons/md';
 import { RiMessengerLine } from 'react-icons/ri';
+import Astronaut2 from '../../assets/Ast1.png';
+import Astronaut1 from '../../assets/cute-astronaut-operating-laptop-cartoon-vector-icon-illustration-science-technology-icon_138676-1974.png';
 import './contact.css';
+
 
 const Contact = () => {
 
@@ -26,6 +29,15 @@ const Contact = () => {
     <section id="contact">
       <h5>Get In Touch</h5>
       <h2>Contact Me</h2>
+
+      <div className='Astronaut2__png'>
+        <img src={Astronaut2} alt="" />
+      </div>
+      
+      <div className='Astronaut1__png'>
+        <img src={Astronaut1} alt="" />
+      </div>
+      
       <div className="container contact__container">
         <div className="contact__options">
           <article className='contact__option'>
@@ -51,6 +63,7 @@ const Contact = () => {
         </div>
 
       {/* End of contact options */}
+     
         <form action="" ref={form} onSubmit={sendEmail}>
           <input type="text" name='name' placeholder='Your Full Name' required/>
           <input type="email" name='name' placeholder='Your Email' required/>

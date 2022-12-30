@@ -16,12 +16,18 @@ const Testimonials = () => {
       <h5>Review from clients</h5>
       <h2>Testimonials</h2>
 
+      <div className='dot-light-1'></div>
+      <div className='dot-light-2'></div>
+      <div className='dot-light-3'></div>
+      <div className='dot-light-4'></div>
+
       <Swiper className="container testimonials__container"
       modules={[Pagination]}
       spaceBetween={40}
       slidesPerView={1}
       pagination={{ clickable: true }}
       >
+        
         <SwiperSlide className='testimonial'>
           <div className="client__avatar">
             <img src={AVATAR1} alt="" />

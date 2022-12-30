@@ -27,6 +27,15 @@ const Services = () => {
           <li><BiCheck className='service__list-icon'/>
             <p>Landing Page</p>
           </li>
+          <li><BiCheck className='service__list-icon'/>
+            <p>Landing Page</p>
+          </li>
+          <li><BiCheck className='service__list-icon'/>
+            <p>Landing Page</p>
+          </li>
+          <li><BiCheck className='service__list-icon'/>
+            <p>Landing Page</p>
+          </li>
 
         </ul>
       </article>
@@ -44,6 +53,15 @@ const Services = () => {
           <li><BiCheck className='service__list-icon'/>
             <p>Landing Page</p>
           </li>
+          <li><BiCheck className='service__list-icon'/>
+            <p>Landing Page</p>
+          </li>
+          <li><BiCheck className='service__list-icon'/>
+            <p>Landing Page</p>
+          </li>
+          <li><BiCheck className='service__list-icon'/>
+            <p>Landing Page</p>
+          </li>
         </ul>
 
       </article>
@@ -57,6 +75,15 @@ const Services = () => {
         <ul className='service__list'>
           <li><BiCheck className='service__list-icon' />
             <p>Design website by figma, just basic, I'll come back soon...</p>
+          </li>
+          <li><BiCheck className='service__list-icon'/>
+            <p>Landing Page</p>
+          </li>
+          <li><BiCheck className='service__list-icon'/>
+            <p>Landing Page</p>
+          </li>
+          <li><BiCheck className='service__list-icon'/>
+            <p>Landing Page</p>
           </li>
           <li><BiCheck className='service__list-icon'/>
             <p>Landing Page</p>
