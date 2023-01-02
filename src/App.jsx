@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import Layouts from './components/Layouts'
 import Welcome from './components/Welcome/Welcome'
+import './main.js'
 
 const App = () => {
   const [loading, setLoading] = useState(true)

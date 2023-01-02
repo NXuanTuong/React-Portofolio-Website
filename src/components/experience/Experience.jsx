@@ -1,116 +1,117 @@
 import React from 'react'
-import { BsPatchCheckFill } from 'react-icons/bs'
-import HT2 from '../../assets/534-5340080_astronaut-helmet-clipart.png'
-import Space from '../../assets/6rjVlVH.png'
-import Astronaut from '../../assets/pngtree-hand-drawn-cartoon-space-astronaut-vector-image_2300696.png'
 import './experience.css'
 
 const Experience = () => {
   return (
-    <section id="experience">
-      <h5>What Skills I Have</h5>
-      <h2>My Experience</h2>
+    // <!-- experience -->
+            <section className="section" id="experience">
+                <div className="container">
+                    <h2 className="section-title padd-15">
+                        Experience
+                    </h2>
+                    <div className="row">
+                        <div className="education padd-15">
+                            <div className="row">
+                                <div className="timeline-box">
+                                    <div className="timeline">
+                                         {/* <!-- timeline-item --> */} 
+                                        <div className="timeline-item">
+                                            <i className="lni lni-graduation timeline-icon"></i>
+                                            <h3 className="timeline-date">
+                                                <i className="lni lni-calendar"></i> 2020 - present
+                                            </h3>
+                                            <h3 className="timeline-title">Fpoly Education</h3>
+                                            <p className="timeline-text">
+                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod dolore molestias 
+                                                totam necessitatibus exercitationem a enim quae praesentium sapiente aspernatur 
+                                                voluptas distinctio nam itaque reprehenderit, tenetur ex fuga mollitia odio.
+                                            </p>
+                                        </div>
 
+                                        {/* <!-- timeline-item --> */}
+                                        <div className="timeline-item">
+                                            <i className="lni lni-graduation timeline-icon"></i>
+                                            <h3 className="timeline-date">
+                                                <i className="lni lni-calendar"></i> 2020 - 2021
+                                            </h3>
+                                            <h3 className="timeline-title">Fpoly Education</h3>
+                                            <p className="timeline-text">
+                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod dolore molestias 
+                                                totam necessitatibus exercitationem a enim quae praesentium sapiente aspernatur 
+                                                voluptas distinctio nam itaque reprehenderit, tenetur ex fuga mollitia odio.
+                                            </p>
+                                        </div>
 
-      <div className='header__socials experience__left'>
-            <img src={Space} alt="" />
-      </div>
+                                        {/* <!-- timeline-item --> */}
+                                        <div className="timeline-item">
+                                            <i className="lni lni-graduation timeline-icon"></i>
+                                            <h3 className="timeline-date">
+                                                <i className="lni lni-calendar"></i> 2021 - 2022
+                                            </h3>
+                                            <h3 className="timeline-title">Fpoly Education</h3>
+                                            <p className="timeline-text">
+                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod dolore molestias 
+                                                totam necessitatibus exercitationem a enim quae praesentium sapiente aspernatur 
+                                                voluptas distinctio nam itaque reprehenderit, tenetur ex fuga mollitia odio.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-      
-      <div className="container experience__container">
-        <div className="experience__frontend">
-        <div className='experience__Astronaut-FE'>
-        <img src={HT2} alt="" />
-        </div>
-          <h3>Frontend Development</h3>
-          <div className="experience__content">
-            <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-              <h4>HTML</h4>
-              <small className='text-light'>Experience</small>
-              </div>
-            </article>
+                        <div className="experience padd-15">
+                            <div className="row">
+                                <div className="timeline-box">
+                                    <div className="timeline">
+                                        {/* <!-- timeline-item --> */}
+                                        <div className="timeline-item">
+                                            <i className="lni lni-briefcase timeline-icon"></i>
+                                            <h3 className="timeline-date">
+                                                <i className="lni lni-calendar"></i> 2020 - present
+                                            </h3>
+                                            <h3 className="timeline-title">Web Developer</h3>
+                                            <p className="timeline-text">
+                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod dolore molestias 
+                                                totam necessitatibus exercitationem a enim quae praesentium sapiente aspernatur 
+                                                voluptas distinctio nam itaque reprehenderit, tenetur ex fuga mollitia odio.
+                                            </p>
+                                        </div>
 
-            <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon'/>
-             <div>
-             <h4>CSS</h4>
-              <small className='text-light'>Intermediate</small>
-             </div>
-            </article>
+                                        {/* <!-- timeline-item --> */}
+                                        <div className="timeline-item">
+                                            <i className="lni lni-briefcase timeline-icon"></i>
+                                            <h3 className="timeline-date">
+                                                <i className="lni lni-calendar"></i> 2020 - 2021
+                                            </h3>
+                                            <h3 className="timeline-title">Front-End Developer</h3>
+                                            <p className="timeline-text">
+                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod dolore molestias 
+                                                totam necessitatibus exercitationem a enim quae praesentium sapiente aspernatur 
+                                                voluptas distinctio nam itaque reprehenderit, tenetur ex fuga mollitia odio.
+                                            </p>
+                                        </div>
 
-            <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-              <h4>Javascript</h4>
-              <small className='text-light'>Experience</small>
-              </div>
-            </article>
-
-            <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon'/>
-             <div>
-             <h4>Tailwindcss</h4>
-              <small className='text-light'>Experience</small>
-             </div>
-            </article>
-
-            <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon'/>
-             <div>
-             <h4>ReactJS</h4>
-              <small className='text-light'>Experience</small>
-             </div>
-            </article>
-
-            <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon'/>
-             <div>
-             <h4>NextJS</h4>
-              <small className='text-light'>Experience</small>
-             </div>
-            </article>
-          </div>
-        </div>
-
-        {/* End of Frontend */}
-        
-        <div className='experience__backend'>
-        <h3>Backend Development</h3>
-          <div className="experience__content">
-            <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-              <h4>NodeJS</h4>
-              <small className='text-light'>Experience</small>
-              </div>
-            </article>
-
-            <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-              <h4>MongoDB</h4>
-              <small className='text-light'>Intermediate</small>
-              </div>
-            </article>
-
-            <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-              <h4>MySQL</h4>
-              <small className='text-light'>Basic</small>
-              </div>
-            </article>
-
-          
-          </div>
-          <div className='experience__Astronaut-BE'>
-            <img src={Astronaut} alt="" />
-            </div>
-        </div>
-      </div>
-    </section>
+                                        {/* <!-- timeline-item --> */}
+                                        <div className="timeline-item">
+                                            <i className="lni lni-briefcase timeline-icon"></i>
+                                            <h3 className="timeline-date">
+                                                <i className="lni lni-calendar"></i> 2021 - 2022
+                                            </h3>
+                                            <h3 className="timeline-title">Back-End Developer</h3>
+                                            <p className="timeline-text">
+                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod dolore molestias 
+                                                totam necessitatibus exercitationem a enim quae praesentium sapiente aspernatur 
+                                                voluptas distinctio nam itaque reprehenderit, tenetur ex fuga mollitia odio.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
   )
 }
 

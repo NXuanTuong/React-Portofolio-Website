@@ -1,106 +1,48 @@
 import React from 'react'
-import { BiCheck } from 'react-icons/bi'
-import astronaut from '../../assets/cute-cartoon-astronaut-isolated-astronout-260nw-1733195078.png'
-import pngTree from '../../assets/pngtree-1.png'
-import pngTree2 from '../../assets/pngtree-2.png'
+import AVT1 from '../../assets/service-1.svg'
+import AVT2 from '../../assets/service-2.svg'
+import AVT3 from '../../assets/service-3.svg'
 import './services.css'
+
 
 const Services = () => {
   return (
-    <section id="services">
-      <h5>What I Offer</h5>
-      <h2>Services</h2>
+    // <!-- services -->
+    <section className="services section" id="services">
+        <div className="container">
+            <h2 className="section-title padd-15">
+                Services
+            </h2>
+            <div className="row">
+                <div className="service-item padd-15">
+                    <div className="service-item-inner" style={{backgroundColor: 'rgb(108, 108, 229)'}}>
+                        <img src={AVT1} alt="" />
+                        <h3>UI/UX Design</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aperiam adipisci veniam excepturi, odit, repudiandae quas pariatur similique rem provident ipsam iusto quod nulla doloribus eveniet vel iste quidem vero?</p>
+                    </div>
+                </div>
 
-      <div className='astronaut__png'>
-        <img src={astronaut} alt="" />
-      </div>
-      <div className="container services__container">
-      <article className='services'>
-        <div className="service__head">
-          <h3>UI/UX Design</h3>
+                <div className="service-item padd-15">
+                    <div className="service-item-inner" style={{backgroundColor: 'rgb(249, 215, 76)'}}>
+                        <img src={AVT2} alt="" />
+                        <h3>Web Development</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aperiam adipisci veniam excepturi, odit, repudiandae quas pariatur similique rem provident ipsam iusto quod nulla doloribus eveniet vel iste quidem vero?</p>
+                    </div>
+                </div>
+
+                <div className="service-item padd-15">
+                    <div className="service-item-inner" style={{backgroundColor: 'rgb(249, 123, 139)'}}>
+                        <img src={AVT3} alt="" />
+                        <h3>Photography</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aperiam adipisci veniam excepturi, odit, repudiandae quas pariatur similique rem provident ipsam iusto quod nulla doloribus eveniet vel iste quidem vero?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div className="text padd-15">
+                <p>Looking for a custom job ? <a href="#contact"> Click me </a> to contact me !</p>
+            </div>
         </div>
-
-        <ul className='service__list'>
-          <li><BiCheck className='service__list-icon' />
-            <p>Building UI/UX your website...</p>
-          </li>
-          <li><BiCheck className='service__list-icon'/>
-            <p>Landing Page</p>
-          </li>
-          <li><BiCheck className='service__list-icon'/>
-            <p>Landing Page</p>
-          </li>
-          <li><BiCheck className='service__list-icon'/>
-            <p>Landing Page</p>
-          </li>
-          <li><BiCheck className='service__list-icon'/>
-            <p>Landing Page</p>
-          </li>
-
-        </ul>
-      </article>
-      {/* End of UI/UX */}
-
-      <article className='services'>
-        <div className="service__head">
-          <h3>Web Development</h3>
-        </div>
-
-        <ul className='service__list'>
-          <li><BiCheck className='service__list-icon' />
-            <p>Building or maintaining your website...</p>
-          </li>
-          <li><BiCheck className='service__list-icon'/>
-            <p>Landing Page</p>
-          </li>
-          <li><BiCheck className='service__list-icon'/>
-            <p>Landing Page</p>
-          </li>
-          <li><BiCheck className='service__list-icon'/>
-            <p>Landing Page</p>
-          </li>
-          <li><BiCheck className='service__list-icon'/>
-            <p>Landing Page</p>
-          </li>
-        </ul>
-
-      </article>
-      {/* End of Web development */}
-
-      <article className='services'>
-        <div className="service__head">
-          <h3>Content Creation</h3>
-        </div>
-
-        <ul className='service__list'>
-          <li><BiCheck className='service__list-icon' />
-            <p>Design website by figma, just basic, I'll come back soon...</p>
-          </li>
-          <li><BiCheck className='service__list-icon'/>
-            <p>Landing Page</p>
-          </li>
-          <li><BiCheck className='service__list-icon'/>
-            <p>Landing Page</p>
-          </li>
-          <li><BiCheck className='service__list-icon'/>
-            <p>Landing Page</p>
-          </li>
-          <li><BiCheck className='service__list-icon'/>
-            <p>Landing Page</p>
-          </li>
-        </ul>
-
-      </article>
-      {/* End of UI/UX */}
-      </div>
-
-      <div className='pngTree__png'>
-        <img src={pngTree} alt="" />
-      </div>
-
-      <div className='pngTree2__png'>
-        <img src={pngTree2} alt="" />
-      </div>
     </section>
   )
 }

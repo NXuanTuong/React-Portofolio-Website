@@ -1,22 +1,93 @@
-import React, { useState } from 'react'
-import { AiOutlineHome, AiOutlineUser } from 'react-icons/ai'
-import { BiBook, BiMessageRounded } from 'react-icons/bi'
-import { MdMiscellaneousServices } from 'react-icons/md'
-import { RxMagicWand } from 'react-icons/rx'
-import './nav.css'
+import './nav.css';
+
 const Nav = () => {
 
-  const [activeNav, setActiveNav] = useState('#')
-  return (
-    <nav>
-      <a href="#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''} data-tip="Home"><AiOutlineHome /></a>
-      <a href="#about" onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''} data-tip="About"><AiOutlineUser /></a>
-      <a href="#experience" onClick={() => setActiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''} data-tip="Experience"><RxMagicWand /></a>
-      <a href="#services" onClick={() => setActiveNav('#services')} className={activeNav === '#services' ? 'active' : ''} data-tip="Services"><MdMiscellaneousServices /></a>
-      <a href="#portfolio" onClick={() => setActiveNav('#portfolio')} className={activeNav === '#portfolio' ? 'active' : ''} data-tip="Portfolio"><BiBook /></a>
-      <a href="#contact" onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''} data-tip="Contact"><BiMessageRounded /></a>
-    </nav>
-  )
+    return (
+        <>
+        <nav className="nav container padd-15">
+                {/* <!-- nav-logo --> */}
+                <a href="" className="nav-logo">
+                    <h2>TuongNX</h2>
+                </a>
+                
+                    <div className="nav-menu" id="nav-menu">
+                        {/* <!-- nav list --> */}
+                        <ul className="nav-list">
+                            <li className="nav-item"><a href="#home" className="nav-link active-link">Home</a></li>
+                            <li className="nav-item"><a href="#about" className="nav-link">About</a></li>
+                            <li className="nav-item"><a href="#experience" className="nav-link ">Experience</a></li>
+                            <li className="nav-item"><a href="#pricing" className="nav-link ">Pricing</a></li>
+                            <li className="nav-item"><a href="#portfolio" className="nav-link ">Portfolio</a></li>
+                            <li className="nav-item"><a href="#contact" className="nav-link ">Contact</a></li>
+                        </ul>
+
+                        <div className="nav-close" id="nav-close">
+                            <i className="lni lni-close"></i>
+                        </div>
+                    </div>
+                    {/* <!-- nav btn --> */}
+                    <div className="nav-btns">
+                        <i className="lni lni-pallet change-theme" id="theme-button"></i>
+                        <div className="nav-toggle" id="nav-toggle">
+                            <i className="lni lni-grid-alt"></i>
+                        </div>
+                    </div>
+        </nav>
+        <div className="customize-theme">
+        <div className="card">
+            <h2>Customize your view</h2>
+            <p>Mange your font size, color, and background</p>
+
+            <div className="font-size">
+                <h3>Font Size</h3>
+
+                <div>
+                    <h6>Aa</h6>
+                    <div className="choose-size">
+                        <span className="font-size-1"></span>
+                        <span className="font-size-2"></span>
+                        <span className="font-size-3 active"></span>
+                        <span className="font-size-4"></span>
+                    </div>
+                    <h3>Aa</h3>
+                </div>
+            </div>
+
+            <div className="color">
+                <h3>Color</h3>
+                <div className="choose-color">
+                    <span className="color-1"></span>
+                    <span className="color-2"></span>
+                    <span className="color-3 active"></span>
+                    <span className="color-4"></span>
+                    <span className="color-5"></span>
+
+                </div>
+            </div>
+
+            <div className="background">
+                <h3>Background</h3>
+                <div className="choose-bg">
+                    <div className="bg-1 active">
+                        <span></span>
+                        <h5 className="bg-1">Light</h5>
+                    </div>
+
+                    <div className="bg-2">
+                        <span></span>
+                        <h5 className="bg-2">Dim</h5>
+                    </div>
+
+                    <div className="bg-3">
+                        <span></span>
+                        <h5 className="bg-3">Dark</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </>
+    )
 }
 
 export default Nav

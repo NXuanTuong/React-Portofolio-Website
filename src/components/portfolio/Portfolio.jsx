@@ -1,98 +1,119 @@
-import React from 'react'
-import IMG1 from '../../assets/portfolio1.jpg'
-import IMG2 from '../../assets/portfolio2.jpg'
-import IMG3 from '../../assets/portfolio3.jpg'
-import IMG4 from '../../assets/portfolio4.jpg'
-import IMG5 from '../../assets/portfolio5.png'
-import IMG6 from '../../assets/portfolio6.jpg'
+import AVT1 from '../../assets/1.svg'
+import AVT2 from '../../assets/2.svg'
+import AVT3 from '../../assets/3.svg'
+import AVT4 from '../../assets/4.svg'
+import AVT5 from '../../assets/5.svg'
+import AVT6 from '../../assets/6.svg'
 import './portfolio.css'
+
 
 const Portfolio = () => {
   return (
-    <section id="portfolio">
-      <h5>My Recent Work</h5>
-      <h2>Portfolio</h2>
+    // <!-- Portfolio -->
 
-      <div className="container portfolio__container">
-        <article className='portfolio__item'>
-          <div className="portfolio__item-image">
-            <img src={IMG1} alt="" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-         <div className="portfolio__item-cta">
-         <a href="" className='btn'>Github</a>
-          <a href="" className='btn btn-primary' target="_blank">Live Demo</a>
-         </div>
+            <section class="portfolio section" id="portfolio">
+                <div class="container">
+                    <h2 class="section-title padd-15">
+                        Portfolio 
+                    </h2>
 
-        </article>
-        {/* Portfolio 1 */}
+                    <div class="row">
+                        <div class="portfolio-filter padd-15">
+                            <div class="portfolio-filter-inner">
+                                <button type="button" class="active" data-filter="all">Everything</button>
+                                <button type="button" data-filter="art">Art</button>
+                                <button type="button" data-filter="creative">Creative</button>
+                                <button type="button" data-filter="design">Design</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="portfolio-item padd-15" data-category="art">
+                            <div class="portfolio-item-inner">
+                                <div class="portfolio-item-thumbnail">
+                                    <img src={AVT1} alt="" />
+                                    <div class="mask"></div>
+                                </div>
 
-        <article className='portfolio__item'>
-          <div className="portfolio__item-image">
-            <img src={IMG2} alt="" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <div className="portfolio__item-cta">
-            <a href="" className='btn'>Github</a>
-            <a href="" className='btn btn-primary' target="_blank">Live Demo</a>
-         </div>
+                                <span class="term">Art, design</span>
 
-        </article>
-        {/* Portfolio 2 */}
+                                <h3 class="portfolio-item-title">Project Management Illustration</h3>
+                                <span class="more-button">&hellip;</span>
+                            </div>
+                        </div>
 
-        <article className='portfolio__item'>
-          <div className="portfolio__item-image">
-            <img src={IMG3} alt="" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <div className="portfolio__item-cta">
-            <a href="" className='btn'>Github</a>
-            <a href="" className='btn btn-primary' target="_blank">Live Demo</a>
-         </div>
-        </article>
-        {/* Portfolio 3 */}
+                        <div class="portfolio-item padd-15" data-category="creative">
+                            <div class="portfolio-item-inner">
+                                <div class="portfolio-item-thumbnail">
+                                    <img src={AVT2} alt="" />
+                                    <div class="mask"></div>
+                                </div>
 
-        <article className='portfolio__item'>
-          <div className="portfolio__item-image">
-            <img src={IMG4} alt="" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <div className="portfolio__item-cta">
-            <a href="" className='btn'>Github</a>
-            <a href="" className='btn btn-primary' target="_blank">Live Demo</a>
-         </div>
+                                <span class="term">Creative</span>
 
-        </article>
-        {/* Portfolio 4 */}
+                                <h3 class="portfolio-item-title">Onboaeding Motivation</h3>
+                                <span class="more-button">&hellip;</span>
+                            </div>
+                        </div>
 
-        <article className='portfolio__item'>
-          <div className="portfolio__item-image">
-            <img src={IMG5} alt="" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <div className="portfolio__item-cta">
-            <a href="" className='btn'>Github</a>
-            <a href="" className='btn btn-primary' target="_blank">Live Demo</a>
-         </div>
+                        <div class="portfolio-item padd-15" data-category="design">
+                            <div class="portfolio-item-inner">
+                                <div class="portfolio-item-thumbnail">
+                                    <img src={AVT3} alt="" />
+                                    <div class="mask"></div>
+                                </div>
 
-        </article>
-        {/* Portfolio 5 */}
+                                <span class="term">Art, design</span>
 
-        <article className='portfolio__item'>
-          <div className="portfolio__item-image">
-            <img src={IMG6} alt="" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <div className="portfolio__item-cta">
-            <a href="" className='btn'>Github</a>
-            <a href="" className='btn btn-primary' target="_blank">Live Demo</a>
-         </div>
+                                <h3 class="portfolio-item-title">iMac Mockup Design</h3>
+                                <span class="more-button">&hellip;</span>
+                            </div>
+                        </div>
 
-        </article>
-        {/* Portfolio 6 */}
-      </div>
+                        <div class="portfolio-item padd-15" data-category="creative">
+                            <div class="portfolio-item-inner">
+                                <div class="portfolio-item-thumbnail">
+                                    <img src={AVT4} alt="" />
+                                    <div class="mask"></div>
+                                </div>
 
-    </section>
+                                <span class="term">Creative</span>
+
+                                <h3 class="portfolio-item-title">Game Store App Concept</h3>
+                                <span class="more-button">&hellip;</span>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-item padd-15" data-category="design">
+                            <div class="portfolio-item-inner">
+                                <div class="portfolio-item-thumbnail">
+                                    <img src={AVT5} alt="" />
+                                    <div class="mask"></div>
+                                </div>
+
+                                <span class="term">Creative</span>
+
+                                <h3 class="portfolio-item-title">Guest App Walkthrough Screens</h3>
+                                <span class="more-button">&hellip;</span>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-item padd-15" data-category="creative">
+                            <div class="portfolio-item-inner">
+                                <div class="portfolio-item-thumbnail">
+                                    <img src={AVT6} alt="" />
+                                    <div class="mask"></div>
+                                </div>
+
+                                <span class="term">Design</span>
+
+                                <h3 class="portfolio-item-title">Delivery App Wireframe</h3>
+                                <span class="more-button">&hellip;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
   )
 }
 

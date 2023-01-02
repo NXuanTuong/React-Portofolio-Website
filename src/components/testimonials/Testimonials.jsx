@@ -1,67 +1,58 @@
 import React from 'react'
-// import Swiper core and required modules
-import { Pagination } from 'swiper'
-// Import Swiper styles
-import 'swiper/css'
-import 'swiper/css/pagination'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import AVATAR1 from '../../assets/avatar1.jpg'
+import AVT1 from '../../assets/avatar-1.svg'
+import AVT3 from '../../assets/avatar-3.svg'
 import './testimonials.css'
-
-
 
 const Testimonials = () => {
   return (
-    <section id="testimonials">
-      <h5>Review from clients</h5>
-      <h2>Testimonials</h2>
+    // <!-- Testimonal -->
+            <section className="section" id="testimonal">
+                <div className="container">
+                    {/* <!-- section title --> */}
+                    <h2 className="section-title padd-15">
+                        Clients and Review 
+                    </h2>
+                    <div className="swiper testimonal-wrapper">
+                        <div className="swiper-wrapper">
+                            <div className="testimonial-item swiper-slide">
+                                <div className="thumb">
+                                    <img src={AVT3} alt="" />
+                                </div>
+                                <h3>Tuong NX</h3>
+                                <span className="subtitle">Product designer at Dribble</span>
+                                <div className="comment">
+                                    I enjoy working with the theme and learn so much Good luck! 
+                                </div>
+                            </div>
+                            
+                            <div className="testimonial-item swiper-slide">
+                                <div className="thumb">
+                                    <img src={AVT1} alt="" />
+                                </div>
+                                <h3>Tuong NX</h3>
+                                <span className="subtitle">Product designer at Dribble</span>
+                                <div className="comment">
+                                    I enjoy working with the theme and learn so much Good luck! 
+                                </div>
+                            </div>
 
-      <div className='dot-light-1'></div>
-      <div className='dot-light-2'></div>
-      <div className='dot-light-3'></div>
-      <div className='dot-light-4'></div>
+                            <div className="testimonial-item swiper-slide">
+                                <div className="thumb">
+                                    <img src={AVT1} alt="" />
+                                </div>
+                                <h3>Tuong NX</h3>
+                                <span className="subtitle">Product designer at Dribble</span>
+                                <div className="comment">
+                                    I enjoy working with the theme and learn so much Good luck! 
+                                </div>
+                            </div>
 
-      <Swiper className="container testimonials__container"
-      modules={[Pagination]}
-      spaceBetween={40}
-      slidesPerView={1}
-      pagination={{ clickable: true }}
-      >
-        
-        <SwiperSlide className='testimonial'>
-          <div className="client__avatar">
-            <img src={AVATAR1} alt="" />
-          </div>
-          <h5 className='client__name'>Nguyen Xuan Tuong</h5>
-            <small className='client__review'>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi mollitia a explicabo quasi voluptatibus maxime temporibus culpa accusamus minus? Cumque aliquam nemo obcaecati 
-              eveniet placeat officia labore ipsum culpa fugit.
-            </small>
-        </SwiperSlide>
+                        </div>
+                        <div className="swiper-pagination"></div>
 
-        <SwiperSlide className='testimonial'>
-          <div className="client__avatar">
-            <img src={AVATAR1} alt="" />
-          </div>
-          <h5 className='client__name'>Nguyen Xuan Tuong</h5>
-            <small className='client__review'>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi mollitia a explicabo quasi voluptatibus maxime temporibus culpa accusamus minus? Cumque aliquam nemo obcaecati 
-              eveniet placeat officia labore ipsum culpa fugit.
-            </small>
-        </SwiperSlide>
-
-        <SwiperSlide className='testimonial'>
-          <div className="client__avatar">
-            <img src={AVATAR1} alt="" />
-          </div>
-          <h5 className='client__name'>Nguyen Xuan Tuong</h5>
-            <small className='client__review'>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi mollitia a explicabo quasi voluptatibus maxime temporibus culpa accusamus minus? Cumque aliquam nemo obcaecati 
-              eveniet placeat officia labore ipsum culpa fugit.
-            </small>
-        </SwiperSlide>
-      </Swiper>
-    </section>
+                    </div>
+                </div>
+            </section>
   )
 }
 
